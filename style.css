@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   margin: 0;
@@ -253,7 +254,11 @@ body {
     align-items: flex-start;
     gap: 1rem;
   }
- 
+
+  .menu-toggle {
+    display: block;
+  }
+
   .nav-list {
     flex-direction: column;
     width: 100%;
