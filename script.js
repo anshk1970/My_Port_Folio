@@ -12,12 +12,3 @@
   toggleBtn.addEventListener('click', () => {
     navList.classList.toggle('active');
   });
-
-document.querySelector("form").addEventListener("submit", function (e) {
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  if (!name || !email.includes("@")) {
-    alert("Please fill in all fields correctly.");
-    e.preventDefault();
-  }
-});
