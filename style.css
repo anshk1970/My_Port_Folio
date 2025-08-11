@@ -248,6 +248,18 @@ body {
   font-size: 0.9rem;
 }
 
+/* Validation styles */
+.error-message {
+  color: #ff4d4d;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+  display: none;
+}
+.invalid {
+  border: 2px solid #ff4d4d !important;
+}
+
 @media (max-width: 700px) {
   .header-container {
     flex-direction: column;
