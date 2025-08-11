@@ -107,7 +107,7 @@ body {
 .about-section p {
   line-height: 1.6;
   font-size: 1.125rem;
-  color: #cbd6f3;
+  color: white;
   font-family: 'Jost';
 }
 
@@ -135,7 +135,7 @@ body {
 
 .skill-icon {
   font-size: 2.3rem;
-  color: #f44336;
+  color: red;
   margin-bottom: 1rem;
 }
 
@@ -148,7 +148,7 @@ body {
 
 .skill-card p {
   font-size: 0.9rem;
-  color: #a0b3d6;
+  color: white;
 }
 
 .education-section h2 {
@@ -177,12 +177,12 @@ body {
 .education-item h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #f44336;
+  color: red;
 }
 
 .education-item p {
   font-size: 1rem;
-  color: #b0c1ffcc;
+  color: white;
   margin-bottom: 0.15rem;
 }
 
