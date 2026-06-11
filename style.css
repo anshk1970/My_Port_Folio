@@ -22,7 +22,6 @@
       overflow-x: hidden;
     }
 
-  
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background: rgba(10,10,15,0.85);
@@ -162,7 +161,6 @@
       font-size: 5rem;
     }
 
-  
     #hero::before {
       content: '';
       position: absolute; inset: 0;
@@ -173,9 +171,7 @@
       pointer-events: none;
     }
 
-   
-   
-   
+
     section { padding: 90px 6vw; }
     .section-label {
       font-family: 'Fira Code', monospace;
@@ -194,8 +190,6 @@
     .section-sub { color: var(--muted); font-size: 1rem; max-width: 520px; margin-bottom: 3rem; }
     .container { max-width: 1100px; margin: 0 auto; }
     .divider { border: none; border-top: 1px solid var(--border); margin: 0; }
-
-
 
     #about { background: var(--bg2); }
     .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
@@ -221,9 +215,6 @@
       font-size: 1.05rem;
       line-height: 1.9;
     }
-
-   
-   
    
     #skills { background: var(--bg); }
     .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1rem; }
@@ -251,7 +242,6 @@
       font-family: 'Fira Code', monospace;
       margin-top: 0.2rem;
     }
-
 
     #education { background: var(--bg2); }
     .edu-card {
@@ -333,7 +323,6 @@
     .project-links a:hover { color: var(--accent2); }
 
 
-
     #profiles { background: var(--bg2); }
     .profiles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
     .profile-card {
@@ -352,7 +341,6 @@
     .profile-card .p-icon { font-size: 2.2rem; }
     .profile-card .p-name { font-weight: 700; font-size: 1rem; }
     .profile-card .p-handle { font-size: 0.8rem; color: var(--accent2); font-family: 'Fira Code', monospace; }
-
 
     #contact { background: var(--bg); }
     .contact-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
@@ -390,7 +378,32 @@
     .contact-form textarea:focus { border-color: var(--accent); }
     .contact-form textarea { min-height: 130px; }
     .contact-form .btn { width: 100%; text-align: center; }
+ 
+    .error{
+    display:block;
+    color:#ff4d4d;
+    font-size:0.85rem;
+    margin-top:-8px;
+    margin-bottom:8px;
+    min-height:18px;
+}
 
+   .success{
+   color:#4CAF50;
+   font-size:0.95rem;
+   margin-top:10px;
+   text-align:center;
+   font-weight:600;
+}
+
+    .input-error{
+    border:2px solid #ff4d4d !important;
+}
+
+   .contact-form button{
+   width:100%;
+   cursor:pointer;
+}
 
     footer {
       background: var(--bg2);
@@ -399,16 +412,13 @@
       display: flex; align-items: center; justify-content: space-between;
       flex-wrap: wrap; gap: 1rem;
     }
+    
     footer .f-logo { font-family: 'Fira Code', monospace; color: var(--accent); font-size: 1rem; }
     footer p { font-size: 0.82rem; color: var(--muted); }
-
-
 
     .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
     .reveal.visible { opacity: 1; transform: none; }
 
-  
-  
     @media (max-width: 768px) {
       .nav-links { display: none; flex-direction: column; position: fixed; top: 64px; left: 0; right: 0; background: var(--bg2); border-bottom: 1px solid var(--border); padding: 1.5rem 6vw; gap: 1.2rem; }
       .nav-links.open { display: flex; }
