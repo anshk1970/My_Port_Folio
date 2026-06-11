@@ -38,13 +38,14 @@
       <div class="avatar-wrap">
         <div class="avatar-ring"></div>
         <div class="avatar-inner">
-          <div class="avatar-placeholder"><img src="ansh.png"></div>
+          <div class="avatar-placeholder"><img src="/ansh.png"></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 <hr class="divider"/>
+
 <section id="about">
   <div class="container">
     <h2 class="section-title">About <span>Me</span></h2>
@@ -69,6 +70,7 @@
   </div>
 </section>
 <hr class="divider"/>
+
 <section id="skills">
   <div class="container">
     <h2 class="section-title">Tech <span>Stack</span></h2>
@@ -88,6 +90,7 @@
   </div>
 </section>
 <hr class="divider"/>
+
 <section id="education">
   <div class="container">
     <h2 class="section-title">My <span>Education</span></h2>
@@ -115,6 +118,7 @@
   </div>
 </section>
 <hr class="divider"/>
+
 <section id="projects">
   <div class="container">
     <h2 class="section-title">My <span>Projects</span></h2>
@@ -124,7 +128,7 @@
         <div class="project-thumb">🌐</div>
         <div class="project-body">
           <h3>Portfolio Website</h3>
-          <p>A personal portfolio website to showcase my skills, education, projects, profiles and contact information. Designed with a clean dark theme and smooth interactions.</p>
+          <p>A personal portfolio website to showcase my skills, projects, education, and contact information. Designed with a clean dark theme and smooth interactions.</p>
           <div class="project-tags">
             <span class="tag">HTML</span>
             <span class="tag">CSS</span>
@@ -132,7 +136,7 @@
           </div>
           <div class="project-links">
             <a href="https://github.com/anshk1970" target="_blank">⬡ GitHub</a>
-            <a href="https://anshk1970.github.io/My_Port_Folio/">↗ Live Demo</a>
+            <a href="#">↗ Live Demo</a>
           </div>
         </div>
       </div>
@@ -156,6 +160,7 @@
   </div>
 </section>
 <hr class="divider"/>
+
 <section id="profiles">
   <div class="container">
     <h2 class="section-title">Find Me <span>Online</span></h2>
@@ -190,11 +195,16 @@
   </div>
 </section>
 <hr class="divider"/>
+
 <section id="contact">
   <div class="container">
     <h2 class="section-title">Get In <span>Touch</span></h2>
-    <p class="section-sub">Have a project in mind, or just want to say hi? I'd love to hear from you.</p>
+    <p class="section-sub">
+      Have a project in mind, or just want to say hi? I'd love to hear from you.
+    </p>
+
     <div class="contact-wrap">
+
       <div class="contact-info reveal">
         <a href="mailto:anshkushwaha1970@gmail.com" class="contact-item">
           <div class="c-icon">📧</div>
@@ -203,6 +213,7 @@
             <div class="c-val">anshkushwaha1970@gmail.com</div>
           </div>
         </a>
+
         <a href="tel:7348246617" class="contact-item">
           <div class="c-icon">📱</div>
           <div>
@@ -210,6 +221,7 @@
             <div class="c-val">+91 7348246617</div>
           </div>
         </a>
+
         <a href="https://www.linkedin.com/in/ansh-kushwaha-65ba34344/" target="_blank" class="contact-item">
           <div class="c-icon">💼</div>
           <div>
@@ -217,6 +229,7 @@
             <div class="c-val">Ansh Kushwaha</div>
           </div>
         </a>
+
         <a href="https://github.com/anshk1970" target="_blank" class="contact-item">
           <div class="c-icon">🐙</div>
           <div>
@@ -225,21 +238,41 @@
           </div>
         </a>
       </div>
+
       <div class="contact-form reveal">
-        <input type="text" placeholder="Your Name" />
-        <input type="email" placeholder="Your Email" />
-        <input type="text" placeholder="Subject" />
-        <textarea placeholder="Your Message..."></textarea>
-        <a href="mailto:anshkushwaha1970@gmail.com" class="btn btn-primary">Send Message</a>
+        <form id="contactForm">
+
+          <input type="text" id="name" placeholder="Your Name">
+          <small class="error" id="nameError"></small>
+
+          <input type="email" id="email" placeholder="Your Email">
+          <small class="error" id="emailError"></small>
+
+          <input type="text" id="subject" placeholder="Subject">
+          <small class="error" id="subjectError"></small>
+
+          <textarea id="message" placeholder="Your Message..."></textarea>
+          <small class="error" id="messageError"></small>
+
+          <button type="submit" class="btn btn-primary">
+            Send Message
+          </button>
+
+          <p id="successMessage" class="success"></p>
+
+        </form>
       </div>
+
     </div>
   </div>
 </section>
+
 <footer>
   <div class="f-logo">Ansh<span style="color:var(--accent2)">.</span>dev</div>
   <p>© 2025 Ansh Kushwaha. Built with 💜 and lots of ☕</p>
   <p style="font-family:'Fira Code',monospace; font-size:0.75rem; color:var(--accent);"> Future MERN Stack Developer</p>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
